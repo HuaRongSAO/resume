@@ -3,9 +3,18 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="陈华荣,个人简历,个人网站">
+    <meta name="keywords" content="陈华荣,个人简历,简历,个人网站,那么帅">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>开始使用 | Amaze UI</title><meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <link rel="stylesheet" href="stylesheets/app.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> {% block head %}{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block head %}{% endblock %}
 </head>
 
 <body>
@@ -14,6 +23,7 @@
     {% include "layouts/mobilemenu.html" %}
 
     {# PC导航#}
+    {% include "layouts/menu.html" %}
 
     {% block content %}{% endblock %}
     {% block javascript %}

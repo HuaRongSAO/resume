@@ -1,3 +1,15 @@
 body{
-    background: #18212D;
+    background: #304B5E;
+    width: 100%;
+    overflow: hidden;
+    font-family: "helvetica neue",arial,sans-serif;
+    font-size: 14px;
+    color: #444
+}
+a,label,input{
+    outline: none;
+    -webkit-tap-highlight-color:transparent!important;
+    &:active{
+        outline: none;
+    }
 }
