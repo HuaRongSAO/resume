@@ -85,3 +85,8 @@
   padding-top:3em;
   text-align:center;
 }
+@media screen and (max-width: 675px) {
+  .scene{
+    height: 120px;
+  }
+}

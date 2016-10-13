@@ -5,7 +5,7 @@
         z-index: 9;
         width: 100%;
         overflow: hidden;
-        top:0;
+        top:-10px;
     }
     input {
         display: none;
@@ -86,14 +86,6 @@
     right: 0;
     width: 100%;
     background-color:#fff;
-    display: flex;
-    box-sizing: border-box;
-    .logo{
-        display: block;
-        width: 98px;
-        height: 60px;
-        padding: 10px 10px;
-    }
     .menu{
         flex: 1;
         ul{
@@ -118,13 +110,11 @@
                     position: relative;
                     display: block;
                     vertical-align: middle;
-                    height: 100%;
-                    line-height: 80px;
                     text-align: center;
-                    padding: 0 15px;
                     margin: 0 5px;
+                    padding: 21px 12px;
                     text-decoration: none;
-                    font-size: 22px;
+                    font-size:15px;
                     color: #333;
                     &:after{
                         position: absolute;
@@ -143,7 +133,11 @@
         }
     }
 }
-
+.logo{
+    display: block;
+    width: 98px;
+    height: 60px;
+}
 // burger
 .burger {
     position: relative;

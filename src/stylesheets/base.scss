@@ -13,3 +13,11 @@ a,label,input{
         outline: none;
     }
 }
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
