@@ -8,8 +8,8 @@
   },
   "homepage": "http://code.viget.com/gulp-starter/",
   "repository": {
-    "type": "git",
-    "url": "git://github.com/vigetlabs/gulp-starter.git"
+    "url": "git://github.com/vigetlabs/gulp-starter.git",
+    "type": "git"
   },
   "scripts": {
     "start": "gulp",
@@ -32,7 +32,7 @@
     "babel-preset-stage-1": "6.5.0",
     "babel-runtime": "^6.11.6",
     "babel-template": "^6.16.0",
-    "browser-sync": "2.11.1",
+    "browser-sync": "^2.11.1",
     "chai": "3.5.0",
     "compression": "1.6.1",
     "del": "^2.2.0",
@@ -69,6 +69,7 @@
     "karma-nyan-reporter": "0.2.4",
     "karma-sinon-chai": "1.2.0",
     "karma-webpack": "1.7.0",
+    "loaders.css": "^0.1.2",
     "lodash": "4.6.1",
     "lolex": "1.4.0",
     "mocha": "2.4.5",
@@ -79,6 +80,7 @@
     "require-dir": "0.3.0",
     "sinon": "1.17.3",
     "sinon-chai": "2.8.0",
+    "vinyl": "^2.0.0",
     "webpack": "1.12.14",
     "webpack-dev-middleware": "1.5.1",
     "webpack-hot-middleware": "2.10.0"
@@ -86,5 +88,7 @@
   "license": "MIT",
   "dependencies": {
     "normalize.css": "^4.0.0"
-  }
+  },
+  "main": "index.js",
+  "author": "HuaRongSAO <1114282509@qq.com>"
 }
