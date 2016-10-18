@@ -1,23 +1,42 @@
-body{
-    background-color:#232427;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: "helvetica neue",arial,sans-serif;
-    font-size: 14px;
-    color: #444
+*{
+  box-sizing: border-box;
 }
-a,label,input{
+body {
+  background-color: #232427;
+  width: 100%;
+  overflow-x: hidden!important;
+  font-family: "helvetica neue", arial, sans-serif;
+  font-size: 14px;
+  color: #444
+}
+
+a, label, input {
+  outline: none;
+  -webkit-tap-highlight-color: transparent !important;
+  &:active {
     outline: none;
-    -webkit-tap-highlight-color:transparent!important;
-    &:active{
-        outline: none;
-    }
+  }
 }
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
-    box-sizing: border-box;
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
-.flex{
-    display: flex;
+
+.flex {
+  display: flex;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
 }

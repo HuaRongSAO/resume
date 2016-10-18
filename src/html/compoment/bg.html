@@ -17,19 +17,21 @@
         var canvas = document.querySelector('.fireworks');
         var ctx = canvas.getContext('2d');
         var numberOfParticules = 24;
-        var distance = 200;
+        var distance = 100;
         var x = 0;
         var y = 0;
         var animations = [];
 
         var setCanvasSize = function() {
             canvas.width = document.body.clientWidth;
-            canvas.height = window.innerHeight;
+            canvas.height = document.body.clientHeight;
         }
 
         var updateCoords = function(e) {
+
             x = e.clientX || e.touches[0].clientX;
             y = e.clientY || e.touches[0].clientY;
+            if( document.body.scrollTop) y=y+ document.body.scrollTop ;
         }
 
         var colors = ['#FF324A', '#31FFA6', '#206EFF', '#FFFF99'];
