@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   background-color: #232427;
-  width: 100%;
+  min-width: 100%;
   overflow-x: hidden!important;
   font-family: "helvetica neue", arial, sans-serif;
   font-size: 14px;
-  color: #444
+  color: #444;
 }
 
 a, label, input {
