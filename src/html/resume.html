@@ -1,205 +1,134 @@
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-<div class="resume" data-module="resume" id="resume">
-    <div class="resume-wrapper">
-        <article class="paper">
-            <header>
-                <div class="header-content">
-                    <div class="header-pic" title="Wiggle Wiggle">
-                        <div class="pic"></div>
-                    </div>
-                    <div class="header-text">
-                        <p>
-                            <span class="first-name">Tim</span>
-                            Daubenschütz
-                        </p>
-                        <p class="subtitle">Bachelor of Science (almost)</p>
-                    </div>
-                </div>
-            </header>
+<div class="resume" data-module="resume">
 
-            <div class="content-wrapper">
+    <div class="resume-info">
+        <div id="resume">
+            <img src="images/user.jpg" alt="陈华荣">
+            <h1>陈华荣</h1>
+            <p>Web: <a href=#>chenhuarong.top</a>
+            <p>Email: <a href=#>1114282509@qq.com</a>
+            <p id="objective">Night gathers, and now my watch begins. It shall not end until my death. I shall take no
+                wife, hold no lands, father no children. I shall wear no crowns and win no glory. I shall live and die
+                at my post. I am the sword in the darkness. I am the watcher on the walls. I am the fire that burns
+                against the cold, the light that brings the dawn, the horn that wakes the sleepers, the shield that
+                guards the realms of men. I pledge my life and honor to the Night’s Watch, for this night and all the
+                nights to come.
+            </p>
+            <dl>
+                <dt>教育</dt>
+                <dd>
+                    <h2>厦门理工学院</h2>
+                    <p><strong>学科专业:</strong> 网络工程<br/></p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>证书</dt>
+                <dd>
+                    <h2>操作系统证书</h2>
+                    <p>RHCSA（红帽初级认证）：Red Hat Certified System Administrator</p>
+                    <h2>软件中级证书</h2>
+                    <p>数据库系统工程师</p>
+            </dl>
+            <dl>
+                <dt>WEB</dt>
+                <dd>
+                    <h2>基础 <span>切片，静态布局</span></h2>
+                    <ul>
+                        <li>基础CSS、css3、原生js、jQuery</li>
+                        <li>第三方UI框架：Bootstrap、AmazeUI、Foundation、Semantic-UI</li>
+                    </ul>
+                    <h2>流行 <span>最新潮流技术</span></h2>
+                    <ul>
+                        <li>angular.js</li>
+                        <li>react.js</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>自动化工具流</dt>
+                <dd>
+                    <h2>gulp <span>静态文件自动化</span></h2>
+                    <ul>
+                        <li>Sass (Libsass via node-sass), Autoprefixer, CSSNano, Source Maps 样式编译</li>
+                        <li>Babel, Webpack，ES6的编译</li>
+                        <li>Nunjucks Template的html模板引擎</li>
+                        <li>imagemin的突变压缩</li>
+                        <li>热替换</li>
+                        <li>Karma, Mocha, Chai单元测试：TDD</li>
+                    </ul>
+                    <h2>webpack<span>react的手脚架</span></h2>
+                    <ul>
+                        <li>react</li>
+                        <li>redux</li>
+                        <li>react-router</li>
+                        <li>react-router-redux</li>
+                        <li>webpack</li>
+                        <li>babel</li>
+                        <li>express</li>
+                        <li>karma</li>
+                        <li>eslint</li>
+                    </ul>
 
-                <!-- CONTACT -->
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat">
-                            Contact
-                        </div>
-                        <div class="content-text">
-                            <ul>
-                                <li>Website</li>
-                                <li>daubenschuetz.de</li>
-                            </ul>
-                            <ul>
-                                <li>Email</li>
-                                <li>tim.daubenschuetz@gmail.com</li>
-                            </ul>
-                            <ul>
-                                <li>Phone</li>
-                                <li>+49 123 456 78</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                </dd>
+            </dl>
+            <dl>
+                <dt>后台语言</dt>
+                <dd>
+                    <h2>node.js <span>全栈工程师</span></h2>
+                    <ul>
+                        <li>express</li>
+                        <li>koa</li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>数据库</dt>
+                <dd>
+                    <h2>mongoDB <span>非关系型</span></h2>
+                    <ul>
+                        <li>mongoose</li>
+                    </ul>
+                    <h2>Mysql <span>关系型</span></h2>
+                </dd>
+            </dl>
+            <dl>
+                <dt>移动开发</dt>
+                <dd>
+                    <h2>Apicloud <span>国内html5封装</span></h2>
+                    <h2>Ionic <span>基于angular的cordova封装</span></h2>
+                </dd>
+            </dl>
+            <dl>
+                <dt>开发环境</dt>
+                <dd>
+                    <h2>操作系统 </h2>
+                    <ul>
+                        <li>Ubuntu （主要开发环境）</li>
+                        <li>window 7</li>
+                    </ul>
+                    <h2>多人合作 </h2>
+                    <ul>
+                        <li>Git</li>
+                        <li>SVN</li>
+                    </ul>
+                </dd>
+            </dl>
 
-                <!-- LOCATION -->
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat">
-                            Location
-                        </div>
-                        <div class="content-text">
-                            <ul>
-                                <li>Address</li>
-                                <li>Some street</li>
-                            </ul>
-                            <ul>
-                                <li>Postal Code</li>
-                                <li>12345</li>
-                            </ul>
-                            <ul>
-                                <li>City</li>
-                                <li>Ulm</li>
-                            </ul>
-                            <ul>
-                                <li>Region</li>
-                                <li>Baden-Württemberg</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- PROFILES -->
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat">
-                            Profiles
-                        </div>
-                        <div class="content-text">
-                            <ul>
-                                <li>Twitter</li>
-                                <li>
-                                    <a href="https://twitter.com/TimDaub" target="_blank">@TimDaub</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>Codepen</li>
-                                <li>
-                                    <a href="http://codepen.io/TimDaub/" target="_blank">@TimDaub</a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>Github</li>
-                                <li>
-                                    <a href="https://github.com/TimDaub" target="_blank">@TimDaub</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat big-text">
-                            Self-employed
-                            <p>2012-05-01 till today</p>
-                        </div>
-                        <div class="content-text work-listing">
-                            <p>Hondrt.de is a small business enterprise (dt. Kleingewerbe) specializing in serving technical needs of local customers. For example building corporate homepages, technical consulting and programming.</p>
-                            <p class="highlight">Implemented and marketed Timedoublr.com, a flexible time tracking app for Apple iOS</p>
-                            <p class="highlight">Consulted a medium-sized business in establishing their media presence</p>
-                        </div>
-                    </div>
-                </section>
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat big-text">
-                            Ulm University
-                            <p>2013-09-01 till today</p>
-                        </div>
-                        <div class="content-text work-listing">
-                            <p>Development of Module Management System (MMS), a content management system for studycourse module handbooks introduced as part of the Bologna Process. Feature requirements included: versioning of every resource, a complex editorial process, visual representation of high level data structures (e.g. trees) and a flexible, RESTful API.</p>
-                            <p class="highlight">Won the Software Construction (dt. Softwaregrundprojekt) class challenge for best usability and got employed by university</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat">
-                            Education
-                            <p>2011-10-01 till</p>
-                            <p style="margin-top:0.25em;">2015-02-14</p>
-                        </div>
-                        <div class="content-text work-listing education-listing">
-                            <p class="heading">Ulm University</p>
-                            <p class="highlight">Media Informatics (Bachelor of Science)</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat big-text">
-                            Awards
-                            <p>Best Usability</p>
-                            <p style="margin-top:0.25em;">2013-07-13</p>
-                        </div>
-                        <div class="content-text work-listing education-listing">
-                            <p class="heading">Faculty of Engineering and Computer Science at Ulm University:</p>
-                            <p class="highlight">For developing Module Management System (MMS) a content management system for module handbooks introduced as part of the Bologna Process.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content">
-                    <div class="row">
-                        <div class="content-cat big-text">
-                            Skills
-                        </div>
-                        <div class="content-text skills-listing">
-                            <ul>
-                                <li>
-                                    Web
-                                    <span>(Master)</span>
-                                    <p class="highlight">Node.js</p>
-                                    <p class="highlight">Angular.js</p>
-                                </li>
-                                <li>
-                                    Mobile
-                                    <span>(Advanced)</span>
-                                    <p class="highlight">Cocoa</p>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    Languages
-                                    <span>(Master)</span>
-                                    <p class="highlight">Javascript</p>
-                                </li>
-                                <li>
-                                    Software
-                                    <span>(Advanced)</span>
-                                    <p class="highlight">Adobe Photoshop</p>
-                                    <p class="highlight">Adobe InDesign</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-
-        </article>
-
+            <dl>
+                <dt>建站</dt>
+                <dd>有独自搭建服务器的能力</dd>
+            </dl>
+        </div>
     </div>
+
+
     <svg id="resume-header" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 510" version="1.1">
         <title>Squares</title>
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <rect id="gray-box" width="50" height="50" fill="#BBBBCC"></rect>
-            <path id="gray-path" d="M495,510 L495, -100" fill="none"></path>
+            <path id="gray-path" d="M495,510 L495, -700" fill="none"></path>
             <animateMotion
                     xlink:href="#gray-box"
                     dur="10s"
@@ -220,7 +149,7 @@
                     fill="freeze"
             ></animateTransform>
             <rect id="brown-box" width="50" height="50" fill="#AA7755"></rect>
-            <path d="M540,530 L540, -100" id="brown-path" fill="none"></path>
+            <path d="M540,530 L540, -800" id="brown-path" fill="none"></path>
             <animateMotion
                     xlink:href="#brown-box"
                     dur="30s"
@@ -242,7 +171,7 @@
             ></animateTransform>
 
             <rect id="purple-box" width="75" height="75" fill="#8B60B9"></rect>
-            <path id="purple-path" d="M595,650 L595, -100" fill="none"></path>
+            <path id="purple-path" d="M595,650 L595, -800" fill="none"></path>
             <animateMotion
                     xlink:href="#purple-box"
                     dur="20s"
@@ -264,7 +193,7 @@
                     fill="freeze"
             ></animateTransform>
             <rect id="cyan-box" width="60" height="60" fill="#66EEDD"></rect>
-            <path id="cyan-path" d="M705,800 L705, -100" fill="none"></path>
+            <path id="cyan-path" d="M705,800 L705, -800" fill="none"></path>
 
             <animateMotion
                     xlink:href="#cyan-box"
@@ -288,7 +217,7 @@
             ></animateTransform>
 
             <rect id="tomato-box" width="35" height="35" fill="#FF8877"></rect>
-            <path id="tomato-path" d="M685,1000 L685, -100" fill="none"></path>
+            <path id="tomato-path" d="M685,1000 L685, -800" fill="none"></path>
 
             <animateMotion
                     xlink:href="#tomato-box"
@@ -314,7 +243,7 @@
 
             <!-- Yellow Box -->
             <rect id="yellow-box" width="30" height="30" fill="#FFEE33"></rect>
-            <path id="yellow-path" d="M755,800 L755, -100" fill="none"></path>
+            <path id="yellow-path" d="M755,1500 L100, -900" fill="none"></path>
 
             <animateMotion
                     xlink:href="#yellow-box"
@@ -337,7 +266,7 @@
                     fill="freeze"
             ></animateTransform>
             <rect id="blue-box" width="50" height="50" fill="#6666FF"></rect>
-            <path d="M785,800 L785, -100" id="blue-path" fill="none"></path>
+            <path d="M785,1200 L785, -800" id="blue-path" fill="none"></path>
 
             <animateMotion
                     xlink:href="#blue-box"
@@ -354,13 +283,13 @@
                     type="rotate"
                     from="0 25 25"
                     to="360 25 25"
-                    dur="6s"
+                    dur="12s"
                     repeatCount="indefinite"
                     fill="freeze"
             ></animateTransform>
 
             <rect id="green-box" width="40" height="40" fill="#66CC99"></rect>
-            <path id="green-path" d="M810,900 L810, -100" fill="none"></path>
+            <path id="green-path" d="M810,1411 L810, -800" fill="none"></path>
 
             <animateMotion
                     xlink:href="#green-box"
@@ -378,7 +307,7 @@
                     type="rotate"
                     from="0 20 20"
                     to="360 20 20"
-                    dur="10s"
+                    dur="12s"
                     repeatCount="indefinite"
                     fill="freeze"
             ></animateTransform>
@@ -386,7 +315,7 @@
 
             <!-- Pink Box -->
             <rect id="pink-box" width="100" height="100" fill="#FF88CC"></rect>
-            <path id="pink-path" d="M1000,900 L1000, -100" fill="none"></path>
+            <path id="pink-path" d="M1000,1300 L1000, -800" fill="none"></path>
 
             <animateMotion
                     xlink:href="#pink-box"
