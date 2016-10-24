@@ -3,6 +3,7 @@
   min-height: 100%;
   position: absolute;
   top:0;
+  //margin-top:60px;
 }
 
 .resume {
@@ -104,9 +105,6 @@
 }
 
 @media screen and (max-width: 550px) {
-  body {
-    margin: 1rem
-  }
   #resume img {
     transform: rotate(0deg)
   }
@@ -149,9 +147,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  body {
-    margin: 0
-  }
+
   img {
     margin: 0;
     margin-bottom: -40px

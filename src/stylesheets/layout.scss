@@ -2,7 +2,7 @@
     display: none;
     label {
         position: absolute;
-        z-index: 9;
+        z-index: 100;
         width: 100%;
         overflow: hidden;
         top:-10px;
@@ -89,7 +89,7 @@
     width: 100%;
     background-color:#fff;
     box-shadow: 0 0 3px #333;
-
+    z-index: 99;
     .menu{
         flex: 1;
         ul{

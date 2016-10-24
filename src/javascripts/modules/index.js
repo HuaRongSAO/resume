@@ -6,7 +6,7 @@ for (var i = 0; i < moduleElements.length; i++) {
   const Module = require(`./${name}`).default
   new Module(el)
 }
-
+console.log("run index")
 /*
   Usage:
   ======

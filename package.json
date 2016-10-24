@@ -23,6 +23,7 @@
     "test:gulp": "mocha ./gulpfile.js/**/*.test.js"
   },
   "devDependencies": {
+    "animejs": "^1.1.1",
     "babel-core": "6.7.2",
     "babel-helper-regex": "^6.9.0",
     "babel-loader": "6.2.4",
