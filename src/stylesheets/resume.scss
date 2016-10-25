@@ -104,13 +104,11 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+
+@media screen and (max-width: 760px) {
   #resume img {
     transform: rotate(0deg)
   }
-}
-
-@media screen and (max-width: 400px) {
   #resume dl dt {
     border-right: none;
     border-bottom: 1px solid #999
@@ -144,16 +142,11 @@
   #resume img {
     margin: 0
   }
-}
-
-@media screen and (max-width: 320px) {
-
   img {
     margin: 0;
     margin-bottom: -40px
   }
   div#resume {
-    width: 320px;
     padding: 12px;
     overflow: hidden
   }
